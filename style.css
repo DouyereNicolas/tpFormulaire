@@ -1,0 +1,539 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'londrina_solidregular';
+}
+
+
+@font-face {
+    font-family: 'londrina_solidregular';
+    src: url('londrinasolid-regular-webfont.woff2') format('woff2'),
+        url('londrinasolid-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.box .form .inputBx .test {
+    width: 100%;
+}
+
+p {
+    margin-top: 5px;
+    color: black;
+}
+
+.box .form .inputBx .test2 {
+    width: 100%;
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 55px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    z-index: 0;
+
+}
+
+#testBg {
+    background: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8b 100%);
+    filter: hue-rotate(120deg);
+    animation: animate 10s linear infinite;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.box {
+    position: relative;
+    padding: 50px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    z-index: 100;
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.1) 15%, transparent 50%, transparent 85%,
+            rgba(255, 255, 255, 0.1) 10 0%);
+}
+
+.box .form {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.box .form h2 {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.box .form .inputBx {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    max-height: 3.9rem;
+}
+
+.box .form .inputBx input {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-align-last: center;
+}
+
+.box .form .inputBx p {
+    width: 100%;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: left;
+    text-align-last: left;
+}
+
+.box .form .inputBx .pUser {
+    width: 100%;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    text-align-last: left;
+    line-height: 1.6rem;
+}
+
+
+.box .form .inputBxArea .textArea {
+    width: 100%;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    text-align-last: center;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.box .form .inputBxRadio p {
+    width: 100%;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    text-align-last: center;
+}
+
+.box .form .inputBxRadio {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+
+}
+
+.pRadio {
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.box .form .inputBxRadio input {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 20px;
+    vertical-align: bottom;
+}
+
+
+
+
+
+.box .form .inputBxRadio label {
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 300;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+
+.box .form .inputBxRadio input[type="radio"] {
+    margin-top: 15px;
+    border: 0px;
+    width: 3%;
+    height: 1.4em;
+    margin-top: 30px;
+
+}
+
+
+.box .form .inputBxSubmit {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+
+.box .form .inputBx select {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+    text-align-last: center;
+}
+
+.box .form .inputBx select option {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.box .form .inputBxArea {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.box .form .inputBx .inputDeco {
+    background: #fff;
+    color: #111;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 0;
+    width: 70%;
+}
+
+
+.box .form .inputBxArea textarea {
+    width: 95%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    margin-top: 10px;
+    resize: vertical;
+}
+
+.box .form .inputBx select option {
+    color: black;
+}
+
+.box .form .inputBx input[type="submit"] {
+    background: #fff;
+    color: #111;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 70%;
+}
+
+.box .form .inputBx input::placeholder {
+    color: #fff;
+}
+
+
+
+
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+
+
+.loaderContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: animateBg 10s linear;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+
+}
+
+
+@keyframes animateBg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.loaderContainer .loader {
+    position: relative;
+    width: 120px;
+    height: 120px;
+
+}
+
+.loaderContainer .loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+
+.loaderContainer .loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: #00ff0a;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a,
+        0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+    animation: animateLoad 1s linear infinite;
+    animation-delay: calc(0.05s * var(--i));
+}
+
+@keyframes animateLoad {
+    0% {
+        transform: scale(1.9);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+.loaderContainer.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (max-width : 1023px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8b 100%);
+        filter: hue-rotate(120deg);
+        animation: animate 10s linear infinite;
+        text-align: center;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .box {
+        position: relative;
+        padding: 50px;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .box .form .inputBx {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+        display: inline-block;
+        max-height: 100%;
+
+    }
+
+    .box .form .inputBx input {
+        width: 100%;
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+        padding: 8px 10px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 100;
+        box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .box .form .inputBx select {
+        width: 100%;
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+        padding: 8px 10px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 100;
+        box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+        margin-left: 0px;
+        margin-bottom: 20px;
+
+    }
+
+    .box .form .inputBxArea {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .box .form .inputBxArea textarea {
+        width: 95%;
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+        padding: 8px 10px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 100;
+        box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .box .form .inputBx input[type="submit"] {
+        background: #fff;
+        color: #111;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-left: 0;
+        width: 70%;
+    }
+
+    .box .form .inputBxRadio input[type="radio"] {
+        margin-top: 15px;
+        border: 0px;
+        width: 6%;
+        height: 1.4em;
+        margin-top: 30px;
+
+    }
+
+    .box .form .inputBx .test2 {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+}
